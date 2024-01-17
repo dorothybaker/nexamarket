@@ -12,8 +12,8 @@ export default function CartProvider({
       mode="payment"
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
-      successUrl="http://localhost:3000/stripe/success"
-      cancelUrl="http://localhost:3000"
+      successUrl="https://nexamarket.vercel.app/stripe/success"
+      cancelUrl="https://nexamarket.vercel.app"
       currency="USD"
       billingAddressCollection={true}
       shouldPersist={true}
